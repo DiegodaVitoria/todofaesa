@@ -34,6 +34,8 @@
 
  fieldset{
    border: none;
+   display: flex;
+   margin-top: 5px;
  }
 
  .input{
