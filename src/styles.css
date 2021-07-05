@@ -1,1 +1,147 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+ }
+
+ body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #f7f7f7;
+ }
+
+
+
+ .wrapper{
+  margin: 120px auto;
+  max-width: 400px;
+  max-height: 500px;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  padding: 25px;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+  0 32px 64px -48px rgba(0, 0, 0, 0.5);
+
+ }
+
+
+
+ fieldset{
+   border: none;
+ }
+
+ .input{
+   border: 1px solid #ccc;
+   width: 86%;
+   height: 30px;
+ }
+
+ input.checkbox{
+  position: relative;
+  right: 6px;
+  top: 1px;
+ }
+
+.btn-check {
+   width: 20px;
+   border: none;
+ }
+
+ .btn-list {
+  float: right;
+  border: none;
+  width: 0px;
+  font-size: 20px;
+  top: 8px;
+  left: -30px;
+  position: relative;
+ }
+
+ .btn-eraser {
+  float: right;
+  border: none;
+  width: 0px;
+  font-size: 20px;
+  top: 8px;
+  left: -5px;
+  position: relative;
+ }
+
+ .btn-send {
+  float: right;
+  height: 30px;
+}
+
+ .btn-eraser:hover{
+  color: #e74c3c;
+ }
+
+ .btn-list:hover{
+  color: #e2b41e;
+ }
+
+ .btn-check:hover{
+  color: #5ce949;
+ }
+
+ .wrapper .inputField{
+  display: flex;
+  height: 45px;
+  width: 100%;
+  margin: 20px 0;
+ }
+
+ .wrapper .todoList{
+  max-height: 250px ;
+  overflow-y: auto;
+
+ }
+
+ .todoList li{
+  list-style: none;
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+  background: #f2f2f2;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  padding: 0 15px;
+  cursor: default;
+  overflow: hidden;
+ }
+
+
+
+
+
+ /* responsivo  */
+
+ @media screen and (max-width: 640px) {
+
+  body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #f7f7f7;
+   }
+
+  .wrapper {
+   margin: 0;
+   min-height: 100%;
+
+  }
+
+  .wrapper .todoList {
+   max-height: 390px;
+   overflow-y: auto;
+ }
+
+ }
